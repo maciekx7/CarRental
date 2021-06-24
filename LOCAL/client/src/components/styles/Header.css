@@ -1,0 +1,61 @@
+body .container {
+  max-width: "100%";
+}
+
+body .btn2 {
+  position: absolute;
+  right: 10px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+body .btn21 {
+  position: absolute;
+  right: 120px;
+  background-color: grey;
+  border: none;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+body .btn1 {
+  color: white;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+}
+
+body .btn5 {
+  background-color: #212529;
+  color: #ffffff8c;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  margin: 5px;
+  border: none;
+}
+
+body .card {
+  height: 480px;
+}
+
+body .bcol {
+  height: 200px;
+}
+
+body .brand {
+  margin-left: 10px;
+}

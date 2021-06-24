@@ -1,0 +1,52 @@
+{
+    "CARS": {
+        "URL": "/api/catalog/cars",
+        "PARAMS": {
+            "AVAILABILITY": {
+                "PARAM": "availability",
+                "STATUS": {
+                    "YES": 1,
+                    "NO": 0
+                }
+            }
+        }
+    },
+    "MAKES": {
+        "URL": "/api/catalog/makes"
+    },
+    "MODELS": {
+        "URL": "/api/catalog/models"
+    },
+    "AUTH": {
+        "SIGNIN": {
+            "URL": "/api/auth/signin"
+        },
+        "SIGNUP": {
+            "USER": {
+                "URL": "/api/auth/signup"
+            },
+            "ADMIN": {
+                "URL": "/api/auth/signup/admin"
+            }
+        },
+        "UPDATE": {
+            "URL": "/api/auth/update"
+        },
+        "USERINFO": {
+            "URL": "/api/auth/data"
+        }
+    },
+    "TRANSACTIONS": {
+       "URL":  "/api/transactions",
+       "ALL": {
+           "URL": "/api/transactions/all"
+       }
+    },
+    "IMAGES": {
+        "URL": "/images"
+    },
+
+    "UPLOAD_JPG": {
+        "URL": "/upload/jpg"
+    }
+}

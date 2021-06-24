@@ -1,0 +1,44 @@
+version: '3.8'
+services: 
+    client:
+        build:
+            context: ./client/.
+        env_file: ./.env
+        command: npm start
+        volumes: 
+            - .:/app/client
+            - /app/client/node_modules
+        ports:
+            - 4001:3000   
+        depends_on: 
+            - server
+    server:
+        build:
+            context: ./server/.
+        env_file: ./.env
+        command: npm start
+        volumes: 
+            - .:/app/server
+            - /app/server/node_modules
+        ports:
+            - $NODE_LOCAL_PORT:$NODE_DOCKER_PORT
+        depends_on: 
+            - mysqldb
+        environment: 
+            DB_HOST: mysqldb
+    mysqldb:
+        build:
+            context: ./mysql/.
+        env_file: ./.env
+        environment: 
+            MYSQL_ROOT_PASSWORD: $DB_PASSWORD
+            MYSQL_DATABASE: $DB_SCHEMA
+        ports:
+            - $MYSQL_LOCAL_PORT:$MYSQL_DOCKER_PORT
+        volumes:
+            - mysql:/var/lib/mysql
+            - mysql_config:/etc/mysql
+
+volumes:
+    mysql:
+    mysql_config:

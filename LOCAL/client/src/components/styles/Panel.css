@@ -1,0 +1,22 @@
+body .divC {
+  background-color: grey;
+}
+
+body .divA {
+  height: 95vh;
+  background-color: grey;
+}
+
+body .formGroup {
+  width: 300px;
+  text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+body .colA {
+  padding: 0px !important;
+}

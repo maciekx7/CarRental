@@ -1,0 +1,43 @@
+1. SING UP
+	
+	POST
+	
+	link: http://localhost:3000/api/auth/singup
+	
+	body: 
+	{
+  "name": "Maciej",
+  "lastName": "Krysiak",
+  "phone": "+48584736483",
+  "password": "123",
+  "email": "maciek@wp.pl"
+	}
+
+	headers: []
+	
+
+2. SING IN
+	
+	POST
+	
+	link: http://localhost:3000/api/auth/singin
+	
+	headers: []
+
+	body: {
+    "email": "maciek@wp.pl",
+    "password": "123"
+}
+
+
+3. TEST API FOR LOGGED USERS
+
+	link: http://localhost:3000/api/test/user
+	
+	headers: 
+		"x-access-token": <token>
+	
+	body: []
+	
+	
+	eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjIwMzMwNjM1LCJleHAiOjE2MjA0MTcwMzV9.up6BSHfBSzQfwaNLusc06g8JefVW0ZE9yZfTwsz9FeI
